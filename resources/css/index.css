@@ -1,14 +1,18 @@
 html {
     font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 body {
     margin: 0;
-    background-color: hotpink;
+    background-color: rgb(255, 125, 200);
 }
 
 header {
+    text-align: center;
+}
+
+.center {
     text-align: center;
 }
 
@@ -31,17 +35,33 @@ header {
     height: 100%;
 }
 
+.flexy {
+    display: flex;
+}
+
 .personal-statement{
     display: inline-block;
     border: 0.5rem outset salmon;
     padding: 0.5rem;
     background-color: lightsalmon;
+    min-width: 20rem;
 }
 
 .personal-statement h3{
     margin-top: 0.25rem;
+    margin-bottom: 0.3rem;
+}
+
+.personal-statement p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
 }
 
 #dancing-icecream{
-    display: inline-block;
+    display: inline;
+}
+
+#web-trouble:hover {
+    background-color: black;
+    color: red;
 }
