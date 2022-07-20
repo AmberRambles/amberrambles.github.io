@@ -1,21 +1,123 @@
+/*Hex# CDB4DB Color: light plum
+  Hex# FFC8DD Color: light pink
+  Hex# FFAFCC Color: pink
+  Hex# BDE0FE Color: light blue
+  Hex# A2D2FF Color: blue
+*/
+
+
+/*  Global Changes  
+----------------------------*/
 html {
     font-size: 18px;
-    font-family: 'Sawarabi Gothic', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
-    margin: 0 9px;
-    background-color: rgb(250, 165, 214);
+    margin: 0;
+    background-color: #CDB4DB;
 }
 
-header {
-    text-align: center;
+section {
+    margin: 0.25rem 0;
+}
+
+p{
+    font-family: 'Domine', serif;
+    line-height: 1.5;
+}
+
+section p{
+    margin-bottom: 0.25rem;
+}
+
+section h2{
+    margin-top: 0.25rem;
+}
+
+.page-wrapper{
+    margin: 0 10%;
 }
 
 .center {
     text-align: center;
 }
 
+/*  Header
+----------------------------*/
+header{
+    background-color: #FFAFCC;
+}
+
+header h1{
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+header h2{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/*  Personal Statement
+----------------------------*/
+
+.statement-box {
+    display: flex;
+    column-gap: 0.25rem;
+}
+
+.personal-statement{
+    display: inline-block;
+    padding: 0.5rem;
+    background-color: #FFC8DD;
+    min-width: 20rem;
+}
+
+.personal-statement h3{
+    margin-top: 0.25rem;
+    margin-bottom: 0.3rem;
+    font-size: 2rem;
+}
+
+.personal-statement p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+#dancing-icecream{ /*the gif*/
+    display: inline;
+    width: 50%;
+}
+
+/*  Biography
+----------------------------*/
+.biography{
+    background-color: #BDE0FE;
+    padding: 0px 1.5em;
+}
+
+
+/*  To Do's
+----------------------------*/
+.to-dos{
+    background-color: whitesmoke;
+}
+
+.to-dos p{
+    margin-top: 0.25rem;
+}
+
+.to-dos ul{
+    margin-bottom: 0.25rem;;
+}
+
+/*  Contact me
+----------------------------*/
+.contact {
+    background-color: #A2D2FF;
+}
 .contact-links {
     display: flex;
     flex-direction: row;
@@ -35,34 +137,18 @@ header {
     height: 100%;
 }
 
-.flexy {
-    display: flex;
-    column-gap: 0.25rem;
+/*  Footer 
+----------------------------*/
+footer h4{
+    margin: 0.75rem 0 0.25rem;
 }
 
-.personal-statement{
-    display: inline-block;
-    border: 0.5rem outset salmon;
-    padding: 0.5rem;
-    background-color: lightsalmon;
-    min-width: 20rem;
+footer h4 span{
+    color: red;
 }
 
-.personal-statement h3{
-    margin-top: 0.25rem;
-    margin-bottom: 0.3rem;
-}
-
-.personal-statement p {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-}
-
-#dancing-icecream{
-    display: inline;
-}
-
-#web-trouble:hover {
+footer h4 a:hover {
     background-color: black;
     color: red;
+    border-radius: 4px;
 }
