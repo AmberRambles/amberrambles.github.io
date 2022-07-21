@@ -46,7 +46,7 @@ section h2{
 /*  Header
 ----------------------------*/
 header{
-    background-color: #FFAFCC;
+    background-color: #BDE0FE;
 }
 
 header h1{
@@ -71,7 +71,7 @@ header h2{
 .personal-statement{
     display: inline-block;
     padding: 0.5rem;
-    background-color: #FFC8DD;
+    background-color: #A2D2FF;
     min-width: 20rem;
 }
 
@@ -94,29 +94,33 @@ header h2{
 /*  Biography
 ----------------------------*/
 .biography{
-    background-color: #BDE0FE;
+    background-color: #FFAFCC;
     padding: 0px 1.5em;
 }
 
-
-/*  To Do's
+/* projects
 ----------------------------*/
-.to-dos{
+.projects{
+    background-color: #FFC8DD;
+}
+
+/*  photos
+----------------------------*/
+.photos{
     background-color: whitesmoke;
 }
 
-.to-dos p{
-    margin-top: 0.25rem;
-}
-
-.to-dos ul{
-    margin-bottom: 0.25rem;;
+/* education-and-certs
+----------------------------*/
+.education-and-certs{
+    background-color: #BDE0FE;
 }
 
 /*  Contact me
 ----------------------------*/
 .contact {
     background-color: #A2D2FF;
+    padding: 0.5rem;
 }
 .contact-links {
     display: flex;
