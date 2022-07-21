@@ -20,6 +20,7 @@ body {
 
 section {
     margin: 0.25rem 0;
+    padding: 0.5rem 1.5rem;
 }
 
 p{
@@ -41,6 +42,10 @@ section h2{
 
 .center {
     text-align: center;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 /*  Header
@@ -95,7 +100,6 @@ header h2{
 ----------------------------*/
 .biography{
     background-color: #FFAFCC;
-    padding: 0px 1.5em;
 }
 
 /* projects
@@ -120,7 +124,6 @@ header h2{
 ----------------------------*/
 .contact {
     background-color: #A2D2FF;
-    padding: 0.5rem;
 }
 .contact-links {
     display: flex;
