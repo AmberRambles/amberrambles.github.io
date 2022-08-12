@@ -56,7 +56,7 @@ header{
 
 header h1{
     font-family: 'Sawarabi Gothic', sans-serif;
-    font-size: 60px;
+    font-size: 3.3rem;
     margin-bottom: 0;
 }
 
@@ -158,4 +158,28 @@ footer h4 a:hover {
     background-color: black;
     color: red;
     border-radius: 4px;
+}
+
+
+/*   Mobile Adjustments
+-----------------------------*/
+@media only screen and (max-width: 1079px){
+    html{
+        font-size: 16.5px;
+    }
+}
+
+@media only screen and (max-width: 999px){
+    html{
+        font-size: 15px;
+    }
+    #dancing-icecream{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 659px){
+    html{
+        font-size: 13px;
+    }
 }
