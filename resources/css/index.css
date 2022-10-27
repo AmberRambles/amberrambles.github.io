@@ -76,7 +76,7 @@ header h2{
 .personal-statement{
     display: inline-block;
     padding: 0.5rem;
-    background-color: #A2D2FF;
+    background-color: #FFAFCC;
     min-width: 20rem;
 }
 
@@ -99,18 +99,12 @@ header h2{
 /*  Biography
 ----------------------------*/
 .biography{
-    background-color: #FFAFCC;
+    background-color: #FFC8DD;
 }
 
 /* projects
 ----------------------------*/
 .projects{
-    background-color: #FFC8DD;
-}
-
-/*  photos
-----------------------------*/
-.photos{
     background-color: whitesmoke;
 }
 
