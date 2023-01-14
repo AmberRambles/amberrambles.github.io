@@ -9,27 +9,56 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Domine&family=Rubik&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./resources/css/index.css">
+  <link rel="stylesheet" href="./resources/css/tab.css">
+  <script src="./resources/js/tab.js"></script>
   <title>Amber Shifflett | Software Developer</title>
 </head>
 <body><div class="page-wrapper">
-  <header class="center">
+  <header>
+    <img id="logo" src="./resources/asLogo.png" alt="logo" />
     <h1>Amber Shifflett</h1>
     <h2>Full Stack Software Developer</h2>
   </header>
-  <aside id="personal-statement" class="statement-box">
-    <!-- <img id="dancing-icecream" src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" alt="dancing ice cream" /> -->
-    <div class="personal-statement center">
-      <p class="quote">"I know computers can help people to lead full, happy lives. My personal vision is to create programs and websites that inspire wonder, improve lives, and are accessible to as many folks as possible."</p>
+
+  <main>
+    <!-- Tab links/header -->
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'Vision')">Vision</button>
+      <button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+      <button class="tablinks" onclick="openTab(event, 'GitHub')">GitHub</button>
+      <button class="tablinks" onclick="openTab(event, 'About')">About</button>
+      <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+    </div>
+    <!-- Tab content -->
+  <div id="Vision" class="tabcontent">
+    <h3>Vision</h3>
+    <p class="quote">"I know computers can help people to lead full, happy lives. My personal vision is to create programs and websites that inspire wonder, improve lives, and are accessible to as many folks as possible."</p>
       <h3>Ideal Job</h3>
       <p>"My ideal job is video game development for a company with forward-thinking ideals, like 2K Gaming."</p>
-    </div>
-  </aside>
-  <section class="projects">
-    <h2>Projects</h2>
+  </div>
+  <div id="Education" class="tabcontent">
+    <h3>Education</h3>
+    <ul>
+      <li>Bachelor of Science Degree in Software Engineering - Western Governors University / <a title="WGU" href="https://www.wgu.edu" target="_blank">Currently Attending</a></li>
+      <li>CompTIA A+ Certification</li>
+      <li>Bachelor of Science Degree in Biological Science - Florida State University / 2013</li>
+    </ul>
+  </div>
+  <div id="GitHub" class="tabcontent">
+    <h3>GitHub</h3>
     <p><a title="Ambers Active Projects" href="https://github.com/AmberRambles/Dev" target="_blank">Active Projects</a><br><a title="Ambers Old Projects" href="https://github.com/AmberRambles/old-projects" target="_blank">Old Work</a></p>
-  </section>
-  <section class="contact">
-    <h2>Contact Me</h2>
+  </div>
+  <div id="About" class="tabcontent">
+    <h3>About</h3>
+    <p class="center">I was born and raised in Jacksonville, Florida, USA. In high school, I was a part of a small team of students who assisted teachers with
+      school IT equipment. I went to college at Florida State University, but I wasn't ready to commit to my career goals yet. Symptomatic of this, I changed my 
+      undergrad major several times. Ultimately, I obtained my first degree: a B.S. in Biology. After college, I worked as a hardware repair technician to fix 
+      personal phones, tablets, and computers. When I moved out West, I was fortunate to find work with a national IT service business (CompuCom) as a field 
+      service technician. Unfortunately, I developed some driving anxiety which forced me out of the position. Currently, I am attending Western Governors 
+      University for Software Engineering. I am eager to collaborate with others to make fun and useful apps!</p>
+  </div>
+  <div id="Contact" class="tabcontent">
+    <h3>Contact</h3>
     <p>Amber Shifflett<br>1603 Delrose AVE<br>Springfield, OR 97477</p>
     <p>Cell #: +1(352)681-3557</p>
     <div class="contact-links">
@@ -37,25 +66,11 @@
       <span class="logo-link"><a href="https://twitter.com/AmberTheDev" target="_blank"><img src="./resources/social-media/twitter.png" alt="Twitter Logo"></a></span>
       <a href="mailto:amber.z.shifflett@outlook.com?subject=Hi There!">amber.z.shifflett@outlook.com</a>
     </div>
-  </section>
-  <section class="education-and-certs">
-    <h2>Education and Certifications</h2>
-    <ul>
-      <li>Bachelor of Science Degree in Software Engineering - Western Governors University / <a title="WGU" href="https://www.wgu.edu" target="_blank">Currently Attending</a></li>
-      <li>Bachelor of Science Degree in Biological Science - Florida State University / 2013</li>
-    </ul>
-  </section>
-  <section class="biography">
-    <h2>Biography - How did she get here?</h2>
-    <p class="center">I was born and raised in Jacksonville, Florida, USA. In high school, I was a part of a small team of students who assisted teachers with
-       school IT equipment. I went to college at Florida State University, but I wasn't ready to commit to my career goals yet. Symptomatic of this, I changed my 
-       undergrad major several times. Ultimately, I obtained my first degree: a B.S. in Biology. After college, I worked as a hardware repair technician to fix 
-       personal phones, tablets, and computers. When I moved out West, I was fortunate to find work with a national IT service business (CompuCom) as a field 
-       service technician. Unfortunately, I developed some driving anxiety which forced me out of the position. Currently, I am attending Western Governors 
-       University for Software Engineering. I am eager to collaborate with others to make fun and useful apps!</p>
-  </section>
+  </div>
+  </main>
+
   <footer>
-    <h4><span>Problems</span> with the site? (revision 1.50, updated January 2023) Contact me at <a id="web-trouble" href="mailto:amber.z.shifflett@outlook.com?subject=Website Trouble!">amber.z.shifflett@outlook.com</a></h4>
+    <h4><span>Problems</span> with the site? (revision 1.61, updated January 2023) Contact me at <a id="web-trouble" href="mailto:amber.z.shifflett@outlook.com?subject=Website Trouble!">amber.z.shifflett@outlook.com</a></h4>
   </footer>
 </div></body>
 </html>

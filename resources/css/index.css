@@ -18,30 +18,13 @@ body {
     background-color: #CDB4DB;
 }
 
-section {
-    margin: 0.25rem 0;
-    padding: 0.5rem 1.5rem;
-}
-
 p{
     font-family: 'Domine', serif;
     line-height: 1.5;
 }
 
-section p{
-    margin-bottom: 0.25rem;
-}
-
-section h2{
-    margin-top: 0.25rem;
-}
-
 .page-wrapper{
     margin: 0 10%;
-}
-
-.center {
-    text-align: center;
 }
 
 a:hover{
@@ -54,10 +37,16 @@ header{
     background-color: #BDE0FE;
 }
 
+#logo{
+    height: 100px;
+    width: 100px;
+}
+
 header h1{
     font-family: 'Sawarabi Gothic', sans-serif;
     font-size: 3.3rem;
     margin-bottom: 0;
+    display: inline-block;
 }
 
 header h2{
@@ -65,60 +54,6 @@ header h2{
     margin-bottom: 0;
 }
 
-/*  Personal Statement
-----------------------------*/
-
-.statement-box {
-    display: flex;
-    column-gap: 0.25rem;
-}
-
-.personal-statement{
-    display: inline-block;
-    padding: 0.5rem;
-    background-color: #FFAFCC;
-    min-width: 20rem;
-}
-
-.personal-statement h3{
-    margin-top: 0.25rem;
-    margin-bottom: 0.3rem;
-    font-size: 2rem;
-}
-
-.personal-statement p {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-}
-
-#dancing-icecream{ /*the gif*/
-    display: inline;
-    width: 50%;
-}
-
-/*  Biography
-----------------------------*/
-.biography{
-    background-color: #FFC8DD;
-}
-
-/* projects
-----------------------------*/
-.projects{
-    background-color: whitesmoke;
-}
-
-/* education-and-certs
-----------------------------*/
-.education-and-certs{
-    background-color: #BDE0FE;
-}
-
-/*  Contact me
-----------------------------*/
-.contact {
-    background-color: #A2D2FF;
-}
 .contact-links {
     display: flex;
     flex-direction: row;
