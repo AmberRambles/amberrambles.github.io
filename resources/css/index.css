@@ -119,6 +119,12 @@ footer h6 a:hover {
 
 /*   Mobile Adjustments
 -----------------------------*/
+@media only screen and (max-width: 1232px){
+    html{
+        font-size: 20px;
+    }
+}
+
 @media only screen and (max-width: 1079px){
     html{
         font-size: 16.5px;
@@ -129,13 +135,19 @@ footer h6 a:hover {
     html{
         font-size: 15px;
     }
-    #dancing-icecream{
+    /*#dancing-icecream{
         display: none;
+    }*/
+    .page-wrapper{
+        margin: 0 10%;
     }
 }
 
 @media only screen and (max-width: 659px){
     html{
         font-size: 13px;
+    }
+    .page-wrapper{
+        margin: 0 auto;
     }
 }
