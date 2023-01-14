@@ -1,30 +1,22 @@
-/*Hex# CDB4DB Color: light plum
-  Hex# FFC8DD Color: light pink
-  Hex# FFAFCC Color: pink
-  Hex# BDE0FE Color: light blue
-  Hex# A2D2FF Color: blue
-*/
-
-
 /*  Global Changes  
 ----------------------------*/
 html {
-    font-size: 18px;
-    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-family: 'Inconsolata', monospace;
 }
 
 body {
     margin: 0;
-    background-color: #CDB4DB;
+    background-color: rgb(215,215,215);
 }
 
 p{
-    font-family: 'Domine', serif;
-    line-height: 1.5;
+    /*line-height: 1.5;*/
+    margin: 0.5rem 2rem;
 }
 
 .page-wrapper{
-    margin: 0 10%;
+    margin: 0 20%;
 }
 
 a:hover{
@@ -34,17 +26,30 @@ a:hover{
 /*  Header
 ----------------------------*/
 header{
-    background-color: #BDE0FE;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+.headerLogoWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo{
     height: 100px;
     width: 100px;
+    display: inline-block;
+    background-color: rgba(228, 142, 245, 0.3);
+    border-radius: 45px;
+    border-right: 0.25rem;
 }
 
 header h1{
-    font-family: 'Sawarabi Gothic', sans-serif;
+    
     font-size: 3.3rem;
+    margin-top: 0px;
     margin-bottom: 0;
     display: inline-block;
 }
@@ -52,6 +57,26 @@ header h1{
 header h2{
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.tab button{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+.tabcontent h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+.tabcontent p{
+    font-family: 'Inconsolata', monospace; 
+}
+
+#quote{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    color:rgb(66, 14, 77);
 }
 
 .contact-links {
@@ -75,15 +100,17 @@ header h2{
 
 /*  Footer 
 ----------------------------*/
-footer h4{
+footer h6{
     margin: 0.75rem 0 0.25rem;
+    text-align: right;
+    font-weight: 400;
 }
 
-footer h4 span{
+footer h6 span{
     color: red;
 }
 
-footer h4 a:hover {
+footer h6 a:hover {
     background-color: black;
     color: red;
     border-radius: 4px;
