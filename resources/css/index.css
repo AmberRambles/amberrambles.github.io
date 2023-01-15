@@ -151,3 +151,30 @@ footer h6 a:hover {
         margin: 0 auto;
     }
 }
+
+@media only screen and (max-width: 500px){
+    .page-wrapper{
+        margin: 0;
+    }
+
+    .tab{
+        flex-direction: column;
+    }
+
+    .headerLogoWrap{
+        flex-direction: column;
+    }
+
+    .tab button{
+        padding: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 290px){
+    html{
+        font-size: 12px;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+}
