@@ -1,7 +1,7 @@
 /*  Global Changes  
 ----------------------------*/
 html {
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Inconsolata', monospace;
 }
 
@@ -16,7 +16,7 @@ p{
 }
 
 .page-wrapper{
-    margin: 0 20%;
+    margin: 0 15%;
 }
 
 a:hover{
@@ -27,6 +27,7 @@ a:hover{
 ----------------------------*/
 header{
     text-align: center;
+	margin-top: 1rem;
     margin-bottom: 2rem;
     font-family: 'Cinzel', serif;
 }
