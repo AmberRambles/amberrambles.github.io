@@ -90,6 +90,7 @@ figure img{
     color:rgb(66, 14, 77);
     background-color: rgba(212, 167, 248, 0.5);
     border-radius: 13px;
+	padding: 0.5rem;
 }
 
 .contact-links {
@@ -114,7 +115,7 @@ figure img{
 /*  Footer 
 ----------------------------*/
 footer{
-	position: absolute;
+	position: sticky;
 	bottom: 0px;
 	right: 10px;
 }
