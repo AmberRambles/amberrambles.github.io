@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Menu</title>
+    <style type="text/css">
+    html{
+        font-size: 18px;
+        background-color: lightpink;
+    }
+    .flex-wrap{
+        display: flex;
+    }
+    </style>
 </head>
 <body>
     <h1>The Menu</h1>
-    <fieldset>
+    <div class="flex-wrap"><fieldset>
         <legend>Amber wants to:</legend>
 
         <input type="checkbox" name="cuddle1" id="cuddle1">
@@ -91,6 +100,6 @@
 
         <input type="checkbox" name="extra1" id="extra1">
         <label for="extra1">Spit on, pee on, etc.</label><br>
-    </fieldset><br>
+    </fieldset></div>
 </body>
 </html>
