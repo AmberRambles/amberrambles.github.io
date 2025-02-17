@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+ 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/checklistStyle.css">
+    <title>Amber's Checklist App</title>
+</head>
+<body>
+    <header><h1>Amber's Checklist App</h1></header>
+    <main>
+        <!-- today's date -->
+        <h2 id="dateBox">Today is: </h2>
+        <!-- input -->
+        <input type="text" id="textInput" placeholder="To-Do to Add">
+        <input type="button" value="Add" id="addButton" onclick="add()">
+        <!-- to do -->
+        <fieldset id="toDos">
+            <legend>To-Do's</legend>
+        </fieldset>
+        <!-- have done -->
+        <fieldset id="haveDones">
+            <legend>Completed</legend>
+        </fieldset>
+    </main>
+    <footer><h5>Created by: <a href="https://ambershifflett.com">Amber Shifflett</a> &copy; 2023</h5></footer>
+</body>
+<script src="./resources/js/checklist.js"></script>
+</html>

@@ -1,0 +1,136 @@
+/*  Global Changes  
+----------------------------*/
+html {
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    margin: 5%;
+    background: url("../../images/Life_is_a_glitch.png") center;
+    text-align: center;
+}
+
+p{
+    margin: 0.5rem 2rem;
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+}
+
+li{
+    margin: 5%
+}
+
+li a{
+    text-decoration: none;
+    color: purple;
+    font-size: 2rem;
+    border: 4px dotted white;
+    border-radius: 4px;
+    padding: 1%;
+    background-color: cyan;
+}
+
+li a:visited{
+    color: red;
+}
+
+li a:hover{
+    background-color: darkcyan;
+    color: fuchsia;
+    border-color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h6{
+    background-color: #9998;
+}
+
+h6 a:hover{
+    background-color: #F008;
+}
+
+/*  Header
+----------------------------*/
+header{
+    text-align: center;
+	margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Cinzel', serif;
+}
+
+header h1{
+    border: 1rem outset #999;
+    font-size: 3.3rem;
+    display: inline-block;
+    padding: 0px 6px;
+    background-color: rgb(215,215,215);
+}
+
+/*   Mobile Adjustments
+-----------------------------*/
+@media only screen and (max-width: 1232px){
+    html{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1079px){
+    html{
+        font-size: 16.5px;
+    }
+}
+
+@media only screen and (max-width: 999px){
+    html{
+        font-size: 15px;
+    }
+    /*#dancing-icecream{
+        display: none;
+    }*/
+    .page-wrapper{
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 659px){
+    html{
+        font-size: 13px;
+    }
+    .page-wrapper{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .page-wrapper{
+        margin: 0;
+    }
+
+    .tab{
+        flex-direction: column;
+    }
+
+    .headerLogoWrap{
+        flex-direction: column;
+    }
+
+    .tab button{
+        padding: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 290px){
+    html{
+        font-size: 12px;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+}
