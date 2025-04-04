@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Amber's Magical Eight Ball</title>
+        <style>
+        main{
+            display: flex;
+            justify-content: center;
+        }
+        #eightBallDiv{
+            display: flex;
+            background-color: #000;
+            color: #999;
+            border-radius: 600px;
+            width: 600px;
+            height: 600px;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        #resultsCicle{
+            background-color: purple;
+            color: salmon;
+            height: 250px;
+            width: 250px;
+            display: flex;
+            border-radius: 50%;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+        }
+        #outputBin{
+            font-size: 24px;
+        }
+        </style>
+        
+    </head>
+
+    <body>
+        <header>
+            <h1>The 8 Ball Knows All</h1>
+        </header>
+        <main>
+            <div id="eightBallDiv">
+                <div id="resultsCicle">
+                    <output id="outputBin">8</output>    
+                </div>
+            </div>
+            <div id="questionDiv">
+                <label for="questionInput">Ask the Eight Ball: </label>
+                <input id="questionInput" type="text" name="questionInput" value="" />
+                <button id="goButton" onclick="ask()">Ask!</button>
+            </div>
+        </main>
+        <footer>
+            <h6>Created by: <a href="./software_dev_index.html">Amber Shifflett</a> &copy; 2025</h6>
+            <h6><span>Problems</span> with the site? (revision 1.74, updated Feb 2025) Contact me <a id="web-trouble" href="mailto:amber.z.shifflett@outlook.com?subject=Website Trouble!">here</a>.</h6>
+        </footer>
+    </body>
+    <script type="text/javascript">
+        function ask() {
+            //set input box to variable
+            let askBox = document.getElementById("questionInput");
+            //set the user question to a variable
+            let askValue = askBox.value;
+            //console.log(askValue);
+            //get output box
+            let outBox = document.getElementById("outputBin");
+            //reset the input box
+            askBox.value = "";
+            let randNum = Math.floor(Math.random() * 8); //returns 0 thru 7
+            //console.log(randNum);
+            switch (randNum) {
+                case 0:
+                    outBox.innerHTML = "Definitely Yes!";
+                    break;
+                case 1:
+                    outBox.innerHTML = "The stars say yes";
+                    break;
+                case 2:
+                    outBox.innerHTML = "Ask again another day";
+                    break;
+                case 3:
+                    outBox.innerHTML = "Perhaps, yes";
+                    break;
+                case 4:
+                    outBox.innerHTML = "I think not";
+                    break;
+                case 5:
+                    outBox.innerHTML = "This future is unknown";
+                    break;
+                case 6:
+                    outBox.innerHTML = "Sorry, its a no";
+                    break;
+                case 7:
+                    outBox.innerHTML = "Absolutely Not";
+                    break;
+                default:
+                    outBox.innerHTML = "Error";
+                    break;
+            }
+        }
+    </script>
+</html>

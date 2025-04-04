@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./resources/css/countdownStyle.css">
+    <script src="./resources/js/countdownJs.js"></script>
+    <title>Amber's Web Timer</title>
+</head>
+<body>
+    <header><h1>Amber's Web Timer</h1></header>
+    <main>
+		<div id="inputDiv">
+        	<label for="inputTime">Enter a time in minutes or seconds:</label>
+        	<input type="number" name="inputTime" id="inputTime" min="0" step="5">
+			<input type="radio" name="inputTimeModifier" id="seconds" value="seconds">
+			<label for="seconds">Seconds</label>
+			<input type="radio" name="inputTimeModifier" id="minutes" value="minutes" checked>
+			<label for="minutes">Minutes</label>
+        	<button id="countDownBttn" onclick="countdown()">Countdown!</button>
+        </div>
+        <output id="outputBox">#</output>
+        <footer><h5>Created by: <a href="./software_dev_index.html">Amber Shifflett</a> &copy; 2023</h5></footer>
+    </main>
+</body>
+</html>

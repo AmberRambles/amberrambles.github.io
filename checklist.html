@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+ 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/checklistStyle.css">
+    <title>Amber's Checklist App</title>
+</head>
+<body>
+    <header><h1>Amber's Checklist App</h1></header>
+    <main>
+        <!-- today's date -->
+        <h2 id="dateBox">Today is: </h2>
+        <!-- input -->
+        <input type="text" id="textInput" placeholder="To-Do to Add" onkeydown="if(event.key === 'Enter') add()">
+        <input type="button" value="Add" id="addButton" onclick="add()">
+        <!-- to do -->
+        <fieldset id="toDos">
+            <legend>To-Do's</legend>
+        </fieldset>
+        <!-- have done -->
+        <fieldset id="haveDones">
+            <legend>Completed</legend>
+        </fieldset>
+    </main>
+    <section>
+        <div class="color-picker">
+            <label for = "bgColorPicker">Choose a color for the background:</label>
+            <input type="color" id="bgColorPicker" name="bgColorPicker">
+            <p id="bgColorValue">Selected Background Color: </p>&nbsp;<span><button onclick="defaultBgColor()">Reset Background Color</button></span>
+        </div>
+        <div class="color-picker">
+            <label for = "fgColorPicker">Choose a color for the foreground:</label>
+            <input type="color" id="fgColorPicker" name="fgColorPicker">
+            <p id="fgColorValue">Selected Foreground Color: </p>&nbsp;<span><button onclick="defaultFgColor()">Reset Foreground Color</button></span>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <h5>Created by: <a href="https://ambershifflett.com">Amber Shifflett</a> &copy; 2023</h5>
+        <h6><span>Problems</span> with the site? (revision 1.74, updated Feb 2025) Contact me <a id="web-trouble" href="mailto:amber.z.shifflett@outlook.com?subject=Website Trouble!">here</a>.</h6>
+    </footer>
+</body>
+<script src="./resources/js/checklist.js"></script>
+<script>
+    document
+        .getElementById("bgColorPicker")
+        .addEventListener("input", function(event) {
+            document.body.style.backgroundColor = event.target.value;
+            document.getElementById("bgColorValue").innerText = "Selected Background Color: " + event.target.value;
+        });
+        document
+        .getElementById("fgColorPicker")
+        .addEventListener("input", function(event) {
+            document.body.style.color = event.target.value;
+            document.getElementById("fgColorValue").innerText = "Selected Foreground Color: " + event.target.value;
+        });
+</script>
+<script>
+    function defaultBgColor() {
+    document.body.style.backgroundColor = "cornsilk";
+    }
+    function defaultFgColor() {
+    document.body.style.color = "black";
+    }
+</script>
+</html>

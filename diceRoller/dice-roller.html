@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <style>
+    html{
+    font-family: sans-serif;
+    font-size: 26px;
+    color: green;
+    background-color: black;
+    display: flex;
+    flex-direction: vertical;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+main{
+    display: inline-block;
+}
+
+button{
+    height: 40px;
+    width: 200px;
+    font-size: 1rem;
+}
+
+output{
+    font-size: 2rem;
+}
+
+.log{
+    display: inline-block; /* Allow the log section to be inline-block for better alignment */
+    margin: 10px; /* Add some margin around the log section for spacing */
+    color: yellow; /* Change log text color to yellow for better visibility */
+    background-color: #333; /* Dark background for the log section */
+    max-height: 400px; /* Limit the height of the log section */
+    max-width: 200px; /* Limit the width of the log section */
+    overflow-y: scroll; /* Allow scrolling if the content exceeds the max height */
+    font-size: 0.75rem; /* Make the log text smaller for better readability */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dice Roller</h1>
+    </header>
+    <main>
+        <p>Select a die and click "Roll" to generate a random number.</p>
+        <output id="output"></output>
+        <fieldset style="margin: 10px; padding: 10px; border: 2px solid green;">
+            <legend>Dice</legend>
+            <input type="radio" name="die" id="2">
+            <label for="2">2</label>
+            <input type="radio" name="die" id="3">
+            <label for="3">3</label>
+            <input type="radio" name="die" id="4">
+            <label for="4">4</label> <br />
+            <input type="radio" name="die" id="6" checked>
+            <label for="6">6</label>
+            <input type="radio" name="die" id="8">
+            <label for="8">8</label>
+            <input type="radio" name="die" id="10">
+            <label for="10">10</label> <br />
+            <input type="radio" name="die" id="12">
+            <label for="12">12</label>
+            <input type="radio" name="die" id="20">
+            <label for="20">20</label>
+            <input type="radio" name="die" id="100">
+            <label for="100">100</label> <br />
+            <button id="rollBtn" onclick="roll()">Roll</button>
+        </fieldset>
+    </main>
+    <section class="log">
+        <fieldset>
+            <legend>Log</legend>
+            <p id="log"></p>
+        </fieldset>
+    </section>
+<script>
+    function rollDie(numFaces) {
+    var logElement = document.getElementById("log"); // Get the log element to display the roll history
+    // Ensure numFaces is a positive integer
+    numFaces = Math.floor(numFaces);
+    if (numFaces < 1) {
+        throw new Error("Number of faces must be a positive integer.");
+    }
+    // Generate a random number between 1 and numFaces (inclusive)
+    var result = Math.floor(Math.random() * numFaces) + 1;
+    // Log the result
+    logElement.innerHTML = logElement.innerHTML.concat(`<br>Rolled a d${numFaces}: <strong>${result}</strong>`); // Append the result to the log
+    // TODO: Format so the most recent result is visible
+    // Return the result
+    return result;
+}
+
+function roll() {
+    // Get the selected die from the radio buttons
+    var selectedDie = document.querySelector('input[name="die"]:checked');
+    if (!selectedDie) {
+        alert("Please select a die to roll.");
+        return;
+    }
+
+    var numFaces = parseInt(selectedDie.id, 10); // Get the number of faces from the selected radio button
+    document.getElementById("output").innerHTML = rollDie(numFaces); // Roll the die and display the result
+}
+</script>
+<footer>
+    <p>&copy;2025 Amber Shifflett</p>
+</footer>
+</body>
+</html>
