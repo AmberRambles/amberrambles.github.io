@@ -33,6 +33,16 @@
         #outputBin{
             font-size: 24px;
         }
+        .log{
+    display: inline-block; /* Allow the log section to be inline-block for better alignment */
+    margin: 10px; /* Add some margin around the log section for spacing */
+    color: yellow; /* Change log text color to yellow for better visibility */
+    background-color: #333; /* Dark background for the log section */
+    max-height: 400px; /* Limit the height of the log section */
+    max-width: 200px; /* Limit the width of the log section */
+    overflow-y: scroll; /* Allow scrolling if the content exceeds the max height */
+    font-size: 0.75rem; /* Make the log text smaller for better readability */
+}
         </style>
         
     </head>
@@ -53,6 +63,12 @@
                 <button id="goButton" onclick="ask()">Ask!</button>
             </div>
         </main>
+        <section class="log">
+            <fieldset>
+                <legend>Log</legend>
+                <p id="log"></p>
+            </fieldset>
+        </section>
         <footer>
             <h6>Created by: <a href="./software_dev_index.html">Amber Shifflett</a> &copy; 2025</h6>
             <h6><span>Problems</span> with the site? (revision 1.74, updated Feb 2025) Contact me <a id="web-trouble" href="mailto:amber.z.shifflett@outlook.com?subject=Website Trouble!">here</a>.</h6>
@@ -70,34 +86,43 @@
             //reset the input box
             askBox.value = "";
             let randNum = Math.floor(Math.random() * 8); //returns 0 thru 7
-            //console.log(randNum);
+            var logElement = document.getElementById("log"); // Get the log element to display the
             switch (randNum) {
                 case 0:
                     outBox.innerHTML = "Definitely Yes!";
+                    logElement.innerHTML += `<p>${askValue} - Definitely Yes!</p>`;
                     break;
                 case 1:
                     outBox.innerHTML = "The stars say yes";
+                    logElement.innerHTML += `<p>${askValue} - The stars say yes</p>`;
                     break;
                 case 2:
                     outBox.innerHTML = "Ask again another day";
+                    logElement.innerHTML += `<p>${askValue} - Ask again another day</p>`;
                     break;
                 case 3:
                     outBox.innerHTML = "Perhaps, yes";
+                    logElement.innerHTML += `<p>${askValue} - Perhaps, yes</p>`;
                     break;
                 case 4:
                     outBox.innerHTML = "I think not";
+                    logElement.innerHTML += `<p>${askValue} - I think not</p>`;
                     break;
                 case 5:
                     outBox.innerHTML = "This future is unknown";
+                    logElement.innerHTML += `<p>${askValue} - This future is unknown</p>`;
                     break;
                 case 6:
                     outBox.innerHTML = "Sorry, its a no";
+                    logElement.innerHTML += `<p>${askValue} - Sorry, its a no</p>`;
                     break;
                 case 7:
                     outBox.innerHTML = "Absolutely Not";
+                    logElement.innerHTML += `<p>${askValue} - Absolutely Not</p>`;
                     break;
                 default:
                     outBox.innerHTML = "Error";
+                    logElement.innerHTML = `<p>${askValue} - Error</p>`;
                     break;
             }
         }
