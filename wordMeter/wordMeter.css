@@ -1,0 +1,5 @@
+#textbox{
+    display: block;
+    min-width: 75%;
+    min-height: 300px;
+  }
